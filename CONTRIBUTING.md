@@ -1,4 +1,4 @@
-# Contributing to My Python Project
+# Contributing to Python Project
 
 Thank you for your interest in contributing! This document provides guidelines and information for contributors.
 
@@ -14,8 +14,8 @@ Thank you for your interest in contributing! This document provides guidelines a
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/my-python-project.git
-   cd my-python-project
+   git clone https://github.com/pouralijan/python-project.git
+   cd python-project
    ```
 
 2. **Install dependencies**
@@ -144,6 +144,8 @@ tests/
 
 ### Bug Reports
 
+### Bug Reports
+
 When reporting bugs, please include:
 
 - Python version
@@ -177,4 +179,4 @@ If you need help:
 - Search existing issues and discussions
 - Ask questions in GitHub discussions or issues
 
-Thank you for contributing to My Python Project! 🚀
+Thank you for contributing to Python Project! 🚀

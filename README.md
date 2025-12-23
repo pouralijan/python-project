@@ -1,8 +1,8 @@
-# My Python Project
+# Python Project
 
-[![Lint](https://img.shields.io/github/actions/workflow/status/your-username/my-python-project/lint.yml?branch=main&style=flat&logo=github-actions&label=Lint)](https://github.com/your-username/my-python-project/actions)
-[![Test](https://img.shields.io/github/actions/workflow/status/your-username/my-python-project/test.yml?branch=main&style=flat&logo=github-actions&label=Test)](https://github.com/your-username/my-python-project/actions)
-[![Build](https://img.shields.io/github/actions/workflow/status/your-username/my-python-project/build.yml?branch=main&style=flat&logo=github-actions&label=Build)](https://github.com/your-username/my-python-project/actions)
+[![Lint](https://img.shields.io/github/actions/workflow/status/pouralijan/python-project/lint.yml?branch=main&style=flat&logo=github-actions&label=Lint)](https://github.com/pouralijan/python-project/actions)
+[![Test](https://img.shields.io/github/actions/workflow/status/pouralijan/python-project/test.yml?branch=main&style=flat&logo=github-actions&label=Test)](https://github.com/pouralijan/python-project/actions)
+[![Build](https://img.shields.io/github/actions/workflow/status/pouralijan/python-project/build.yml?branch=main&style=flat&logo=github-actions&label=Build)](https://github.com/pouralijan/python-project/actions)
 
 A modern Python project template using UV for dependency management, with comprehensive tooling for code quality, testing, and CI/CD.
 
@@ -32,9 +32,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ### Clone and Setup
 
 ```bash
-git clone https://github.com/your-username/my-python-project.git
-cd my-python-project
-uv sync --extra dev
+git clone https://github.com/pouralijan/python-project.git
+cd python-project
 ```
 
 This installs the package in editable mode along with all development dependencies.
@@ -44,7 +43,7 @@ This installs the package in editable mode along with all development dependenci
 Run the main module:
 
 ```bash
-uv run python -m my_python_project.main
+uv run python -m python_project.main
 ```
 
 Or use the task runner:
@@ -100,7 +99,7 @@ task build
 
 ```
 ├── src/
-│   └── my_python_project/     # Main package
+│   └── python_project/        # Main package
 │       ├── __init__.py
 │       └── main.py           # Entry point
 ├── tests/                     # Test files
