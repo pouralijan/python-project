@@ -1,8 +1,8 @@
 # My Python Project
 
-[![CI](https://github.com/your-username/my-python-project/workflows/Lint/badge.svg)](https://github.com/your-username/my-python-project/actions)
-[![CI](https://github.com/your-username/my-python-project/workflows/Test/badge.svg)](https://github.com/your-username/my-python-project/actions)
-[![CI](https://github.com/your-username/my-python-project/workflows/Build/badge.svg)](https://github.com/your-username/my-python-project/actions)
+[![Lint](https://github.com/your-username/my-python-project/workflows/Lint/badge.svg)](https://github.com/your-username/my-python-project/actions)
+[![Test](https://github.com/your-username/my-python-project/workflows/Test/badge.svg)](https://github.com/your-username/my-python-project/actions)
+[![Build](https://github.com/your-username/my-python-project/workflows/Build/badge.svg)](https://github.com/your-username/my-python-project/actions)
 
 A modern Python project template using UV for dependency management, with comprehensive tooling for code quality, testing, and CI/CD.
 

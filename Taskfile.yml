@@ -50,10 +50,12 @@ tasks:
   build:
     desc: Build the package
     cmds:
-      - uv build
+      - uv run pip install build
+      - uv run python -m build
 
   publish:
     desc: Publish to PyPI (dry run)
     cmds:
-      - uv build
-      - uv publish --dry-run
+      - uv run pip install build
+      - uv run python -m build
+      - echo "Would run: uv publish --dry-run"
