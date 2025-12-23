@@ -88,9 +88,45 @@ This project uses:
 
 ### Commit Messages
 
+This project follows the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification for commit messages.
+
+#### Format
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+#### Types
+
+- `feat`: A new feature
+- `fix`: A bug fix
+- `docs`: Documentation only changes
+- `style`: Changes that do not affect the meaning of the code (white-space, formatting, etc.)
+- `refactor`: A code change that neither fixes a bug nor adds a feature
+- `perf`: A code change that improves performance
+- `test`: Adding missing tests or correcting existing tests
+- `build`: Changes that affect the build system or external dependencies
+- `ci`: Changes to CI configuration files and scripts
+- `chore`: Other changes that don't modify src or test files
+
+#### Examples
+
+- `feat: add user authentication`
+- `fix: resolve memory leak in data processing`
+- `docs: update API documentation`
+- `refactor: simplify algorithm in utils.py`
+
+#### Additional Rules
+
 - Use clear, descriptive commit messages
-- Start with a verb in imperative mood (e.g., "Add feature", "Fix bug")
-- Reference issue numbers when applicable
+- Start with a verb in imperative mood
+- Reference issue numbers when applicable (e.g., `fix: resolve issue #123`)
+- Keep the subject line under 50 characters
+- Use the body for detailed explanations if needed
 
 ## Testing
 
@@ -127,12 +163,45 @@ tests/
 3. **Update documentation** if needed
 4. **Add tests** for new functionality
 
+### Changelog Updates
+
+This project maintains a changelog following the [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) format.
+
+#### When to Update
+
+- **Added**: For new features
+- **Changed**: For changes in existing functionality
+- **Deprecated**: For soon-to-be removed features
+- **Removed**: For removed features
+- **Fixed**: For bug fixes
+- **Security**: For vulnerability fixes
+
+#### How to Update
+
+1. Add entries to the `[Unreleased]` section in `CHANGELOG.md`
+2. Use past tense for descriptions (e.g., "Added feature" not "Add feature")
+3. Group related changes under appropriate headings
+4. Reference issue/PR numbers when applicable
+
+#### Example
+
+```markdown
+## [Unreleased]
+
+### Added
+- New user authentication feature (#123)
+
+### Fixed
+- Memory leak in data processing module (#124)
+```
+
 ### PR Guidelines
 
 - Provide a clear description of the changes
 - Reference any related issues
 - Keep PRs focused on a single feature or fix
 - Ensure CI passes for all checks
+- Update the changelog for user-facing changes
 
 ### Review Process
 
