@@ -1,8 +1,8 @@
 # My Python Project
 
-[![Lint](https://github.com/your-username/my-python-project/workflows/Lint/badge.svg)](https://github.com/your-username/my-python-project/actions)
-[![Test](https://github.com/your-username/my-python-project/workflows/Test/badge.svg)](https://github.com/your-username/my-python-project/actions)
-[![Build](https://github.com/your-username/my-python-project/workflows/Build/badge.svg)](https://github.com/your-username/my-python-project/actions)
+[![Lint](https://img.shields.io/github/actions/workflow/status/your-username/my-python-project/lint.yml?branch=main&style=flat&logo=github-actions&label=Lint)](https://github.com/your-username/my-python-project/actions)
+[![Test](https://img.shields.io/github/actions/workflow/status/your-username/my-python-project/test.yml?branch=main&style=flat&logo=github-actions&label=Test)](https://github.com/your-username/my-python-project/actions)
+[![Build](https://img.shields.io/github/actions/workflow/status/your-username/my-python-project/build.yml?branch=main&style=flat&logo=github-actions&label=Build)](https://github.com/your-username/my-python-project/actions)
 
 A modern Python project template using UV for dependency management, with comprehensive tooling for code quality, testing, and CI/CD.
 
