@@ -20,6 +20,17 @@ A modern Python project template using UV for dependency management, with compre
 
 - Python 3.8+
 - [UV](https://github.com/astral-sh/uv) for dependency management
+- [Go-Task](https://taskfile.dev/) for task running
+
+#### Installing Go-Task
+
+```bash
+# Using Go (recommended)
+go install github.com/go-task/task/v3/cmd/task@latest
+
+# Or using other methods
+# See https://taskfile.dev/installation/
+```
 
 ## Installation
 
