@@ -59,3 +59,39 @@ tasks:
     cmds:
       - uv publish
       - uv publish --dry-run
+
+  rename:
+    desc: Rename the project (use with vars NEW_NAME, NEW_AUTHOR, NEW_EMAIL, NEW_USERNAME)
+    vars:
+      NEW_NAME: "new-project-name"
+      NEW_AUTHOR: "New Author"
+      NEW_EMAIL: "new@email.com"
+      NEW_USERNAME: "newusername"
+    cmds:
+      - sed -i 's/python-project/{{.NEW_NAME}}/g' pyproject.toml
+      - sed -i 's/Hassan Pouralijan/{{.NEW_AUTHOR}}/g' pyproject.toml
+      - sed -i 's/pouralijan@gmail.com/{{.NEW_EMAIL}}/g' pyproject.toml
+      - sed -i 's/pouralijan/{{.NEW_USERNAME}}/g' README.md CONTRIBUTING.md .github/workflows/*.yml
+      - mv src/python_project src/{{.NEW_NAME | replace "-" "_"}}
+      - sed -i 's/python_project/{{.NEW_NAME | replace "-" "_"}}/g' tests/test_main.py README.md
+      - cp CHANGELOG.md CHANGELOG.md.backup
+      - |
+        cat > CHANGELOG.md << 'EOF'
+        # Changelog
+
+        All notable changes to this project will be documented in this file.
+
+        The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+        and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+        ## [Unreleased]
+
+        ### Added
+        - Initial project setup
+
+        ## [0.1.0] - YYYY-MM-DD
+
+        ### Added
+        - Basic project structure
+        EOF
+      - "echo 'Project renamed. CHANGELOG.md backed up to CHANGELOG.md.backup. Update the new CHANGELOG.md and commit changes.'"
